@@ -11,7 +11,7 @@ PATH = pathlib.Path(__file__).parent
 DATA_PATH = PATH.joinpath("../data").resolve()
 
 #from sqlalchemy import create_engine
-#e = create_engine("db2+ibm_db://jpl36331:h28p0+7g67rhlp6h@dashdb-txn-sbox-yp-lon02-07.services.eu-gb.bluemix.net:50000/BLUDB")
+#e = create_engine("db2+ibm_db://:h28p0+7g67rhlp6h@dashdb-txn-sbox-yp-lon02-07.services.eu-gb.bluemix.net:50000/BLUDB")
 #get_table = 'select * from plant_data_example'
 #df = pd.read_sql_query(get_table, e)
 df = pd.read_excel('data.xlsx')
